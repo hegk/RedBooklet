@@ -3,7 +3,7 @@
 // RedBooklet
 //
 // Created by Reid on 2023/8/31
-// Copyright © 2023 ___ORGANIZATIONNAME___. All rights reserved.
+// Copyright © 2023 R. All rights reserved.
 
 /// 
     
