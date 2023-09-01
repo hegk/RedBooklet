@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CA561D04222D4C0B697ED69 /* Pods_RedBooklet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AA4094B36FB48AC33AB1D7 /* Pods_RedBooklet.framework */; };
 		E75D73352AA0BFC50094CB72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73342AA0BFC50094CB72 /* AppDelegate.swift */; };
 		E75D73372AA0BFC50094CB72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73362AA0BFC50094CB72 /* SceneDelegate.swift */; };
 		E75D73392AA0BFC50094CB72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73382AA0BFC50094CB72 /* ViewController.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43AA4094B36FB48AC33AB1D7 /* Pods_RedBooklet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedBooklet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB82D132DB7F3F70F75A449 /* Pods-RedBooklet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedBooklet.debug.xcconfig"; path = "Target Support Files/Pods-RedBooklet/Pods-RedBooklet.debug.xcconfig"; sourceTree = "<group>"; };
+		508471849AE0FED4C3607D68 /* Pods-RedBooklet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedBooklet.release.xcconfig"; path = "Target Support Files/Pods-RedBooklet/Pods-RedBooklet.release.xcconfig"; sourceTree = "<group>"; };
 		E75D73312AA0BFC50094CB72 /* RedBooklet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBooklet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75D73342AA0BFC50094CB72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E75D73362AA0BFC50094CB72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,18 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA561D04222D4C0B697ED69 /* Pods_RedBooklet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36F62726BCF49530C94822C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43AA4094B36FB48AC33AB1D7 /* Pods_RedBooklet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E75D73282AA0BFC50094CB72 = {
 			isa = PBXGroup;
 			children = (
 				E75D734B2AA0D1250094CB72 /* .gitignore */,
 				E75D73332AA0BFC50094CB72 /* RedBooklet */,
 				E75D73322AA0BFC50094CB72 /* Products */,
+				FB4711DB8B78D07BFC204C95 /* Pods */,
+				36F62726BCF49530C94822C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +88,16 @@
 			path = RedBooklet;
 			sourceTree = "<group>";
 		};
+		FB4711DB8B78D07BFC204C95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FB82D132DB7F3F70F75A449 /* Pods-RedBooklet.debug.xcconfig */,
+				508471849AE0FED4C3607D68 /* Pods-RedBooklet.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E75D73482AA0BFC70094CB72 /* Build configuration list for PBXNativeTarget "RedBooklet" */;
 			buildPhases = (
+				588892525AE1287ADB59A448 /* [CP] Check Pods Manifest.lock */,
 				E75D732D2AA0BFC50094CB72 /* Sources */,
 				E75D732E2AA0BFC50094CB72 /* Frameworks */,
 				E75D732F2AA0BFC50094CB72 /* Resources */,
+				82382E4B89FFBA6DC145715D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +168,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		588892525AE1287ADB59A448 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RedBooklet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82382E4B89FFBA6DC145715D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RedBooklet/Pods-RedBooklet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RedBooklet/Pods-RedBooklet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RedBooklet/Pods-RedBooklet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E75D732D2AA0BFC50094CB72 /* Sources */ = {
@@ -292,6 +361,7 @@
 		};
 		E75D73492AA0BFC70094CB72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB82D132DB7F3F70F75A449 /* Pods-RedBooklet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +395,7 @@
 		};
 		E75D734A2AA0BFC70094CB72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508471849AE0FED4C3607D68 /* Pods-RedBooklet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
