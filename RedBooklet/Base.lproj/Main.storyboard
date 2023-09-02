@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="inx-fX-4vF" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="42"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="cKR-MR-gcM"/>
+                                    <constraint firstAttribute="height" constant="42" id="cKR-MR-gcM"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="30" minimumInteritemSpacing="10" id="Ben-gO-ZZn">
                                     <size key="itemSize" width="128" height="128"/>
@@ -44,7 +44,7 @@
                             <constraint firstItem="LDy-Ln-Jyh" firstAttribute="trailing" secondItem="Icg-kW-qWc" secondAttribute="trailing" id="2lP-Ng-3zf"/>
                             <constraint firstItem="inx-fX-4vF" firstAttribute="leading" secondItem="Icg-kW-qWc" secondAttribute="leading" id="7Kf-K8-2Ez"/>
                             <constraint firstItem="inx-fX-4vF" firstAttribute="top" secondItem="Icg-kW-qWc" secondAttribute="top" id="Hgu-mF-deh"/>
-                            <constraint firstItem="LDy-Ln-Jyh" firstAttribute="top" secondItem="inx-fX-4vF" secondAttribute="bottom" id="Q6u-Og-OTI"/>
+                            <constraint firstItem="LDy-Ln-Jyh" firstAttribute="top" secondItem="inx-fX-4vF" secondAttribute="bottom" constant="2" id="Q6u-Og-OTI"/>
                             <constraint firstAttribute="bottom" secondItem="LDy-Ln-Jyh" secondAttribute="bottom" id="YQ8-AS-fhk"/>
                             <constraint firstItem="Icg-kW-qWc" firstAttribute="trailing" secondItem="inx-fX-4vF" secondAttribute="trailing" id="lMS-aT-Tcm"/>
                             <constraint firstItem="LDy-Ln-Jyh" firstAttribute="leading" secondItem="Icg-kW-qWc" secondAttribute="leading" id="ytO-8a-EOl"/>
@@ -69,13 +69,47 @@
                     <view key="view" contentMode="scaleToFill" id="LU2-A7-lEa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Yy-hX-3b0" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="59" width="393" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Zim-Qw-L4j"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2qN-A4-xTG">
+                                    <size key="itemSize" width="159" height="96"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2VG-s3-gRV">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="48W-8o-eYi"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="HfH-cb-iFg"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CVc-wK-1rT"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2VG-s3-gRV" secondAttribute="bottom" id="9ay-Iq-g5U"/>
+                            <constraint firstItem="3Yy-hX-3b0" firstAttribute="trailing" secondItem="CVc-wK-1rT" secondAttribute="trailing" id="Chv-ah-hhj"/>
+                            <constraint firstItem="3Yy-hX-3b0" firstAttribute="top" secondItem="CVc-wK-1rT" secondAttribute="top" id="M9g-9K-ekj"/>
+                            <constraint firstItem="2VG-s3-gRV" firstAttribute="trailing" secondItem="CVc-wK-1rT" secondAttribute="trailing" id="MA5-gK-dzJ"/>
+                            <constraint firstItem="3Yy-hX-3b0" firstAttribute="leading" secondItem="CVc-wK-1rT" secondAttribute="leading" id="Ofa-hj-eDC"/>
+                            <constraint firstItem="2VG-s3-gRV" firstAttribute="leading" secondItem="CVc-wK-1rT" secondAttribute="leading" id="Ybm-2X-ECm"/>
+                            <constraint firstItem="2VG-s3-gRV" firstAttribute="top" secondItem="3Yy-hX-3b0" secondAttribute="bottom" id="aKg-aG-hmc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonBarView" destination="3Yy-hX-3b0" id="Gx8-sO-e14"/>
+                        <outlet property="containerView" destination="2VG-s3-gRV" id="hdA-fS-MfP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vjx-Nk-Qb7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2552" y="-1413"/>
+            <point key="canvasLocation" x="2550.3816793893129" y="-1413.3802816901409"/>
         </scene>
         <!--购物-->
         <scene sceneID="bej-dB-5IQ">
@@ -84,17 +118,6 @@
                     <view key="view" contentMode="scaleToFill" id="Mgx-Ee-bmY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnH-1G-wXh">
-                                <rect key="frame" x="191" y="308" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <segue destination="FJf-R7-8lO" kind="push" id="Nl6-LR-8NB"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hKL-Sy-xrN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -212,9 +235,9 @@
         <!--WaterfallVC-->
         <scene sceneID="cM2-Mn-rEq">
             <objects>
-                <collectionViewController id="FJf-R7-8lO" customClass="HDWaterfallVC" customModule="RedBooklet" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="WaterfallVCIdentifier" id="FJf-R7-8lO" customClass="HDWaterfallVC" customModule="RedBooklet" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="kLx-9Y-P8V">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewLayout key="collectionViewLayout" id="2Mz-KI-2HM" customClass="CHTCollectionViewWaterfallLayout" customModule="CHTCollectionViewWaterfallLayout"/>
@@ -252,16 +275,13 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XmI-dt-vSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2526" y="-651"/>
+            <point key="canvasLocation" x="3335" y="-1413"/>
         </scene>
     </scenes>
     <resources>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

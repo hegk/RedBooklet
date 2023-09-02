@@ -16,12 +16,10 @@ class HDHomeVC: ButtonBarPagerTabStripViewController {
         // MARK: ButtonBar 导选中条颜色
         settings.style.selectedBarHeight = 2
         settings.style.selectedBarBackgroundColor = UIColor(named: "theme")!
-        //        public var selectedBarVerticalAlignment: SelectedBarVerticalAlignment = .bottom
         settings.style.selectedBarVerticalAlignment = .bottom
         
         // MARK: ButtonBar button设置
         settings.style.buttonBarItemBackgroundColor = .clear
-        settings.style.buttonBarItemTitleColor = .label
         settings.style.buttonBarItemFont = .systemFont(ofSize: 16)
         settings.style.buttonBarItemLeftRightMargin = 0
         

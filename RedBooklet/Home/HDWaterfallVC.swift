@@ -9,15 +9,19 @@
 
 import UIKit
 import CHTCollectionViewWaterfallLayout
+import XLPagerTabStrip
 
 class HDWaterfallVC: UICollectionViewController {
+    var moduleName = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-                
-         
         
+        let layout = collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout
+        layout.columnCount = 2
+        layout.minimumColumnSpacing = kWaterPadding
+        layout.minimumInteritemSpacing = kWaterPadding
+        layout.sectionInset = UIEdgeInsets(top: 0, left: kWaterPadding, bottom: kWaterPadding, right: kWaterPadding)
     }
 
     // MARK: UICollectionViewDataSource
@@ -75,5 +79,11 @@ class HDWaterfallVC: UICollectionViewController {
 extension HDWaterfallVC :CHTCollectionViewDelegateWaterfallLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         UIImage(named: "\(indexPath.item + 1)")!.size
+    }
+}
+
+extension HDWaterfallVC: IndicatorInfoProvider {
+    func indicatorInfo(for pagerTabStripController: XLPagerTabStrip.PagerTabStripViewController) -> XLPagerTabStrip.IndicatorInfo {
+        IndicatorInfo(title: moduleName)
     }
 }
