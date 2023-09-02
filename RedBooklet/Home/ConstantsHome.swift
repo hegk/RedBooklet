@@ -9,11 +9,13 @@
 
 import Foundation
 
-// MARK: xib views` Identifier
+// MARK: vcs` identifier
 let kDiscoveryVCIdentifier = "DiscoveryVCIdentifier"
 let kFollowVCIdentifier = "FollowVCIdentifier"
 let kNearbyVCIdentifier = "NearbyVCIdentifier"
 
+// MARK: cells` identifier
+let kWaterfallCellIdentifier = "WaterfallCellIdentifier"
 
 
 
