@@ -10,12 +10,16 @@
 		1CA561D04222D4C0B697ED69 /* Pods_RedBooklet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AA4094B36FB48AC33AB1D7 /* Pods_RedBooklet.framework */; };
 		E75D73352AA0BFC50094CB72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73342AA0BFC50094CB72 /* AppDelegate.swift */; };
 		E75D73372AA0BFC50094CB72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73362AA0BFC50094CB72 /* SceneDelegate.swift */; };
-		E75D73392AA0BFC50094CB72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73382AA0BFC50094CB72 /* ViewController.swift */; };
 		E75D733C2AA0BFC50094CB72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75D733A2AA0BFC50094CB72 /* Main.storyboard */; };
 		E75D733F2AA0BFC50094CB72 /* RedBooklet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E75D733D2AA0BFC50094CB72 /* RedBooklet.xcdatamodeld */; };
 		E75D73412AA0BFC70094CB72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E75D73402AA0BFC70094CB72 /* Assets.xcassets */; };
 		E75D73442AA0BFC70094CB72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75D73422AA0BFC70094CB72 /* LaunchScreen.storyboard */; };
 		E75D734C2AA0D1250094CB72 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E75D734B2AA0D1250094CB72 /* .gitignore */; };
+		E75D73512AA231EA0094CB72 /* HDHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73502AA231EA0094CB72 /* HDHomeVC.swift */; };
+		E75D73532AA2CC260094CB72 /* HDDiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73522AA2CC260094CB72 /* HDDiscoveryVC.swift */; };
+		E75D73552AA2CDE90094CB72 /* HDFollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73542AA2CDE90094CB72 /* HDFollowVC.swift */; };
+		E75D73572AA2CE140094CB72 /* HDNearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73562AA2CE140094CB72 /* HDNearbyVC.swift */; };
+		E75D735A2AA2CED00094CB72 /* ConstantsHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73592AA2CED00094CB72 /* ConstantsHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +29,17 @@
 		E75D73312AA0BFC50094CB72 /* RedBooklet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBooklet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75D73342AA0BFC50094CB72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E75D73362AA0BFC50094CB72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E75D73382AA0BFC50094CB72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E75D733B2AA0BFC50094CB72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E75D733E2AA0BFC50094CB72 /* RedBooklet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RedBooklet.xcdatamodel; sourceTree = "<group>"; };
 		E75D73402AA0BFC70094CB72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E75D73432AA0BFC70094CB72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E75D73452AA0BFC70094CB72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E75D734B2AA0D1250094CB72 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E75D73502AA231EA0094CB72 /* HDHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDHomeVC.swift; sourceTree = "<group>"; };
+		E75D73522AA2CC260094CB72 /* HDDiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDDiscoveryVC.swift; sourceTree = "<group>"; };
+		E75D73542AA2CDE90094CB72 /* HDFollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDFollowVC.swift; sourceTree = "<group>"; };
+		E75D73562AA2CE140094CB72 /* HDNearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDNearbyVC.swift; sourceTree = "<group>"; };
+		E75D73592AA2CED00094CB72 /* ConstantsHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +84,9 @@
 		E75D73332AA0BFC50094CB72 /* RedBooklet */ = {
 			isa = PBXGroup;
 			children = (
+				E75D734F2AA231BC0094CB72 /* Home */,
 				E75D73342AA0BFC50094CB72 /* AppDelegate.swift */,
 				E75D73362AA0BFC50094CB72 /* SceneDelegate.swift */,
-				E75D73382AA0BFC50094CB72 /* ViewController.swift */,
 				E75D733A2AA0BFC50094CB72 /* Main.storyboard */,
 				E75D73402AA0BFC70094CB72 /* Assets.xcassets */,
 				E75D73422AA0BFC70094CB72 /* LaunchScreen.storyboard */,
@@ -88,13 +96,24 @@
 			path = RedBooklet;
 			sourceTree = "<group>";
 		};
+		E75D734F2AA231BC0094CB72 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E75D73502AA231EA0094CB72 /* HDHomeVC.swift */,
+				E75D73522AA2CC260094CB72 /* HDDiscoveryVC.swift */,
+				E75D73542AA2CDE90094CB72 /* HDFollowVC.swift */,
+				E75D73562AA2CE140094CB72 /* HDNearbyVC.swift */,
+				E75D73592AA2CED00094CB72 /* ConstantsHome.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		FB4711DB8B78D07BFC204C95 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				4FB82D132DB7F3F70F75A449 /* Pods-RedBooklet.debug.xcconfig */,
 				508471849AE0FED4C3607D68 /* Pods-RedBooklet.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -216,10 +235,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E75D73392AA0BFC50094CB72 /* ViewController.swift in Sources */,
+				E75D73572AA2CE140094CB72 /* HDNearbyVC.swift in Sources */,
 				E75D73352AA0BFC50094CB72 /* AppDelegate.swift in Sources */,
+				E75D73552AA2CDE90094CB72 /* HDFollowVC.swift in Sources */,
 				E75D733F2AA0BFC50094CB72 /* RedBooklet.xcdatamodeld in Sources */,
+				E75D735A2AA2CED00094CB72 /* ConstantsHome.swift in Sources */,
 				E75D73372AA0BFC50094CB72 /* SceneDelegate.swift in Sources */,
+				E75D73512AA231EA0094CB72 /* HDHomeVC.swift in Sources */,
+				E75D73532AA2CC260094CB72 /* HDDiscoveryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
