@@ -8,4 +8,5 @@ target 'RedBooklet' do
 
   # Pods for RedBooklet
   pod 'XLPagerTabStrip', '~> 9.0'
+  pod 'CHTCollectionViewWaterfallLayout'
 end

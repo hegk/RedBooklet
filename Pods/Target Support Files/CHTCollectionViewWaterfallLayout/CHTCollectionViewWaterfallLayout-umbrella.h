@@ -10,8 +10,7 @@
 #endif
 #endif
 
-#import <XLPagerTabStrip/FXPageControl.h>
 
-FOUNDATION_EXPORT double XLPagerTabStripVersionNumber;
-FOUNDATION_EXPORT const unsigned char XLPagerTabStripVersionString[];
+FOUNDATION_EXPORT double CHTCollectionViewWaterfallLayoutVersionNumber;
+FOUNDATION_EXPORT const unsigned char CHTCollectionViewWaterfallLayoutVersionString[];
 
