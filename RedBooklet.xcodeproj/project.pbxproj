@@ -22,6 +22,8 @@
 		E75D735A2AA2CED00094CB72 /* ConstantsHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73592AA2CED00094CB72 /* ConstantsHome.swift */; };
 		E75D735C2AA3A2930094CB72 /* HDWaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D735B2AA3A2930094CB72 /* HDWaterfallVC.swift */; };
 		E75D735E2AA3AA280094CB72 /* HDWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D735D2AA3AA280094CB72 /* HDWaterfallCell.swift */; };
+		E75D73602AAC67950094CB72 /* HDBaseTabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D735F2AAC67950094CB72 /* HDBaseTabBarC.swift */; };
+		E75D73622AAC70550094CB72 /* HDUploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73612AAC70550094CB72 /* HDUploadVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		E75D73592AA2CED00094CB72 /* ConstantsHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsHome.swift; sourceTree = "<group>"; };
 		E75D735B2AA3A2930094CB72 /* HDWaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDWaterfallVC.swift; sourceTree = "<group>"; };
 		E75D735D2AA3AA280094CB72 /* HDWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDWaterfallCell.swift; sourceTree = "<group>"; };
+		E75D735F2AAC67950094CB72 /* HDBaseTabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDBaseTabBarC.swift; sourceTree = "<group>"; };
+		E75D73612AAC70550094CB72 /* HDUploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDUploadVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				E75D735B2AA3A2930094CB72 /* HDWaterfallVC.swift */,
 				E75D735D2AA3AA280094CB72 /* HDWaterfallCell.swift */,
 				E75D73592AA2CED00094CB72 /* ConstantsHome.swift */,
+				E75D735F2AAC67950094CB72 /* HDBaseTabBarC.swift */,
+				E75D73612AAC70550094CB72 /* HDUploadVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E75D735C2AA3A2930094CB72 /* HDWaterfallVC.swift in Sources */,
+				E75D73622AAC70550094CB72 /* HDUploadVC.swift in Sources */,
 				E75D73572AA2CE140094CB72 /* HDNearbyVC.swift in Sources */,
 				E75D73352AA0BFC50094CB72 /* AppDelegate.swift in Sources */,
 				E75D73552AA2CDE90094CB72 /* HDFollowVC.swift in Sources */,
@@ -251,6 +258,7 @@
 				E75D73512AA231EA0094CB72 /* HDHomeVC.swift in Sources */,
 				E75D735E2AA3AA280094CB72 /* HDWaterfallCell.swift in Sources */,
 				E75D73532AA2CC260094CB72 /* HDDiscoveryVC.swift in Sources */,
+				E75D73602AAC67950094CB72 /* HDBaseTabBarC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

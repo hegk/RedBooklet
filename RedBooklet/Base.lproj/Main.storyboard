@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="1720" y="-651"/>
         </scene>
-        <!--View Controller-->
+        <!--UploadVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HDUploadVC" customModule="RedBooklet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="1720" y="1501"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Base Tab BarC-->
         <scene sceneID="ok0-1U-vCR">
             <objects>
-                <tabBarController id="lSb-yV-SZn" sceneMemberID="viewController">
+                <tabBarController id="lSb-yV-SZn" customClass="HDBaseTabBarC" customModule="RedBooklet" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H1A-72-YIZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
