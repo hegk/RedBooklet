@@ -24,6 +24,7 @@
 		E75D735E2AA3AA280094CB72 /* HDWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D735D2AA3AA280094CB72 /* HDWaterfallCell.swift */; };
 		E75D73602AAC67950094CB72 /* HDBaseTabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D735F2AAC67950094CB72 /* HDBaseTabBarC.swift */; };
 		E75D73622AAC70550094CB72 /* HDUploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73612AAC70550094CB72 /* HDUploadVC.swift */; };
+		E75D73652AAD6A640094CB72 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73642AAD6A640094CB72 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E75D735D2AA3AA280094CB72 /* HDWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDWaterfallCell.swift; sourceTree = "<group>"; };
 		E75D735F2AAC67950094CB72 /* HDBaseTabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDBaseTabBarC.swift; sourceTree = "<group>"; };
 		E75D73612AAC70550094CB72 /* HDUploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDUploadVC.swift; sourceTree = "<group>"; };
+		E75D73642AAD6A640094CB72 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				E75D734F2AA231BC0094CB72 /* Home */,
+				E75D73632AAD6A310094CB72 /* Common */,
 				E75D73342AA0BFC50094CB72 /* AppDelegate.swift */,
 				E75D73362AA0BFC50094CB72 /* SceneDelegate.swift */,
 				E75D733A2AA0BFC50094CB72 /* Main.storyboard */,
@@ -113,11 +116,19 @@
 				E75D73562AA2CE140094CB72 /* HDNearbyVC.swift */,
 				E75D735B2AA3A2930094CB72 /* HDWaterfallVC.swift */,
 				E75D735D2AA3AA280094CB72 /* HDWaterfallCell.swift */,
-				E75D73592AA2CED00094CB72 /* ConstantsHome.swift */,
 				E75D735F2AAC67950094CB72 /* HDBaseTabBarC.swift */,
 				E75D73612AAC70550094CB72 /* HDUploadVC.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E75D73632AAD6A310094CB72 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E75D73592AA2CED00094CB72 /* ConstantsHome.swift */,
+				E75D73642AAD6A640094CB72 /* Extension.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		FB4711DB8B78D07BFC204C95 /* Pods */ = {
@@ -256,6 +267,7 @@
 				E75D735A2AA2CED00094CB72 /* ConstantsHome.swift in Sources */,
 				E75D73372AA0BFC50094CB72 /* SceneDelegate.swift in Sources */,
 				E75D73512AA231EA0094CB72 /* HDHomeVC.swift in Sources */,
+				E75D73652AAD6A640094CB72 /* Extension.swift in Sources */,
 				E75D735E2AA3AA280094CB72 /* HDWaterfallCell.swift in Sources */,
 				E75D73532AA2CC260094CB72 /* HDDiscoveryVC.swift in Sources */,
 				E75D73602AAC67950094CB72 /* HDBaseTabBarC.swift in Sources */,

@@ -24,7 +24,15 @@ class HDBaseTabBarC: UITabBarController, UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if let vc = viewController as? HDUploadVC {
             
-            let picker = YPImagePicker()
+            var config = YPImagePickerConfiguration()
+            config.isScrollToChangeModesEnabled = false
+            config.onlySquareImagesFromCamera = false
+            config.shouldSaveNewPicturesToAlbum = true
+            config.albumName = "小红书HD"
+            config.albumName = Bundle.main.appName
+            
+            
+            let picker = YPImagePicker(configuration: config)
             picker.didFinishPicking { [unowned picker] items, _ in
                 if let photo = items.singlePhoto {
                     print(photo.fromCamera) // Image source (camera or library)
