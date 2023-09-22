@@ -25,6 +25,8 @@
 		E75D73602AAC67950094CB72 /* HDBaseTabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D735F2AAC67950094CB72 /* HDBaseTabBarC.swift */; };
 		E75D73622AAC70550094CB72 /* HDUploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73612AAC70550094CB72 /* HDUploadVC.swift */; };
 		E75D73652AAD6A640094CB72 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73642AAD6A640094CB72 /* Extension.swift */; };
+		E75D73682ABD64F40094CB72 /* HDEditCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73672ABD64F40094CB72 /* HDEditCVC.swift */; };
+		E75D736A2ABD7B5B0094CB72 /* HDEditPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D73692ABD7B5B0094CB72 /* HDEditPhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		E75D735F2AAC67950094CB72 /* HDBaseTabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDBaseTabBarC.swift; sourceTree = "<group>"; };
 		E75D73612AAC70550094CB72 /* HDUploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDUploadVC.swift; sourceTree = "<group>"; };
 		E75D73642AAD6A640094CB72 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E75D73672ABD64F40094CB72 /* HDEditCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDEditCVC.swift; sourceTree = "<group>"; };
+		E75D73692ABD7B5B0094CB72 /* HDEditPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDEditPhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		E75D73332AA0BFC50094CB72 /* RedBooklet */ = {
 			isa = PBXGroup;
 			children = (
+				E75D73662ABD64670094CB72 /* Upload */,
 				E75D734F2AA231BC0094CB72 /* Home */,
 				E75D73632AAD6A310094CB72 /* Common */,
 				E75D73342AA0BFC50094CB72 /* AppDelegate.swift */,
@@ -117,7 +122,6 @@
 				E75D735B2AA3A2930094CB72 /* HDWaterfallVC.swift */,
 				E75D735D2AA3AA280094CB72 /* HDWaterfallCell.swift */,
 				E75D735F2AAC67950094CB72 /* HDBaseTabBarC.swift */,
-				E75D73612AAC70550094CB72 /* HDUploadVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -129,6 +133,16 @@
 				E75D73642AAD6A640094CB72 /* Extension.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		E75D73662ABD64670094CB72 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				E75D73612AAC70550094CB72 /* HDUploadVC.swift */,
+				E75D73672ABD64F40094CB72 /* HDEditCVC.swift */,
+				E75D73692ABD7B5B0094CB72 /* HDEditPhotoCell.swift */,
+			);
+			path = Upload;
 			sourceTree = "<group>";
 		};
 		FB4711DB8B78D07BFC204C95 /* Pods */ = {
@@ -263,9 +277,11 @@
 				E75D73572AA2CE140094CB72 /* HDNearbyVC.swift in Sources */,
 				E75D73352AA0BFC50094CB72 /* AppDelegate.swift in Sources */,
 				E75D73552AA2CDE90094CB72 /* HDFollowVC.swift in Sources */,
+				E75D736A2ABD7B5B0094CB72 /* HDEditPhotoCell.swift in Sources */,
 				E75D733F2AA0BFC50094CB72 /* RedBooklet.xcdatamodeld in Sources */,
 				E75D735A2AA2CED00094CB72 /* ConstantsHome.swift in Sources */,
 				E75D73372AA0BFC50094CB72 /* SceneDelegate.swift in Sources */,
+				E75D73682ABD64F40094CB72 /* HDEditCVC.swift in Sources */,
 				E75D73512AA231EA0094CB72 /* HDHomeVC.swift in Sources */,
 				E75D73652AAD6A640094CB72 /* Extension.swift in Sources */,
 				E75D735E2AA3AA280094CB72 /* HDWaterfallCell.swift in Sources */,

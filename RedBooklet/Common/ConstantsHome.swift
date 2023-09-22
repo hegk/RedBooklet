@@ -17,6 +17,7 @@ let kWaterfallVCIdentifier = "WaterfallVCIdentifier"
 
 // MARK: cells` identifier
 let kWaterfallCellIdentifier = "WaterfallCellIdentifier"
+let kEditPhotoCellIdentifier = "EditPhotoCellIdentifier"
 
 
 let kWaterPadding: CGFloat = 4

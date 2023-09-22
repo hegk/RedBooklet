@@ -22,7 +22,7 @@ class HDBaseTabBarC: UITabBarController, UITabBarControllerDelegate {
     
     
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        if let vc = viewController as? HDUploadVC {
+        if viewController is HDUploadVC {
             
             var config = YPImagePickerConfiguration()
             config.isScrollToChangeModesEnabled = false

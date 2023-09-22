@@ -145,6 +145,99 @@
             </objects>
             <point key="canvasLocation" x="1720" y="58"/>
         </scene>
+        <!--EditCVC-->
+        <scene sceneID="EBx-Fk-5P9">
+            <objects>
+                <viewController id="lr4-Qr-HHy" customClass="HDEditCVC" customModule="RedBooklet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HOW-Gg-tAy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61a-hE-iHD">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aj6-9K-hVG">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gBg-Yu-fWv">
+                                                <rect key="frame" x="16" y="16" width="361" height="90"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="BNb-2D-aiE"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mjA-3W-PCt">
+                                                    <size key="itemSize" width="90" height="90"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EditPhotoCellIdentifier" id="blz-sh-7Co" customClass="HDEditPhotoCell" customModule="RedBooklet" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EJL-iG-c7h">
+                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZWv-cb-Slv">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="ZWv-cb-Slv" firstAttribute="leading" secondItem="EJL-iG-c7h" secondAttribute="leading" id="9OG-5k-3w4"/>
+                                                                <constraint firstAttribute="trailing" secondItem="ZWv-cb-Slv" secondAttribute="trailing" id="Pxs-uD-e0h"/>
+                                                                <constraint firstItem="ZWv-cb-Slv" firstAttribute="top" secondItem="EJL-iG-c7h" secondAttribute="top" id="chf-2P-3Kd"/>
+                                                                <constraint firstAttribute="bottom" secondItem="ZWv-cb-Slv" secondAttribute="bottom" id="gkh-DJ-x0X"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="photoImage" destination="ZWv-cb-Slv" id="1Bb-rJ-6X0"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="lr4-Qr-HHy" id="FRK-bF-iLM"/>
+                                                    <outlet property="delegate" destination="lr4-Qr-HHy" id="u2c-0n-Cjj"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="gBg-Yu-fWv" secondAttribute="trailing" constant="16" id="KLN-YP-I3F"/>
+                                            <constraint firstItem="gBg-Yu-fWv" firstAttribute="leading" secondItem="Aj6-9K-hVG" secondAttribute="leading" constant="16" id="l9a-6I-eHl"/>
+                                            <constraint firstItem="gBg-Yu-fWv" firstAttribute="top" secondItem="Aj6-9K-hVG" secondAttribute="top" constant="16" id="uWY-AG-mOe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Aj6-9K-hVG" firstAttribute="top" secondItem="FUK-iz-f91" secondAttribute="top" id="3R4-Kv-FdA"/>
+                                    <constraint firstItem="Aj6-9K-hVG" firstAttribute="trailing" secondItem="FUK-iz-f91" secondAttribute="trailing" id="FuX-rg-Etm"/>
+                                    <constraint firstItem="Aj6-9K-hVG" firstAttribute="height" secondItem="Gg8-mk-3Sc" secondAttribute="height" id="Lfm-Tx-HeB"/>
+                                    <constraint firstItem="Aj6-9K-hVG" firstAttribute="bottom" secondItem="FUK-iz-f91" secondAttribute="bottom" id="Ruh-4i-IYT"/>
+                                    <constraint firstItem="Aj6-9K-hVG" firstAttribute="width" secondItem="Gg8-mk-3Sc" secondAttribute="width" id="SJa-ZN-qzU"/>
+                                    <constraint firstItem="Aj6-9K-hVG" firstAttribute="leading" secondItem="FUK-iz-f91" secondAttribute="leading" id="Snh-xx-Jxc"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="FUK-iz-f91"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Gg8-mk-3Sc"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g3w-90-1An"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="61a-hE-iHD" secondAttribute="bottom" id="Jwb-GK-eRk"/>
+                            <constraint firstItem="61a-hE-iHD" firstAttribute="top" secondItem="g3w-90-1An" secondAttribute="top" id="TeW-iC-lVH"/>
+                            <constraint firstItem="61a-hE-iHD" firstAttribute="trailing" secondItem="g3w-90-1An" secondAttribute="trailing" id="adw-i2-6yh"/>
+                            <constraint firstItem="61a-hE-iHD" firstAttribute="leading" secondItem="g3w-90-1An" secondAttribute="leading" id="rqr-CT-H9u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoCollectionView" destination="gBg-Yu-fWv" id="ZQy-ee-NgQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PmE-ea-6Mc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2467.93893129771" y="57.74647887323944"/>
+        </scene>
         <!--消息-->
         <scene sceneID="iiC-Sr-eUN">
             <objects>
@@ -279,6 +372,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="5" width="1080" height="1080"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
